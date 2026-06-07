@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Student Management System</h1>
+<h3>Total Students: <span
+id="totalStudents">0</span></h3>
+<h3>Total Male Student: <span
+id="maleCount">0</span></h3>
+<h3>Total Female Student: <span
+id="femaleCount">0</span></h3>
+<input type="text" id="search" placeholder="Search Student" onkeyup="searchStudent()">
+
+<div class="container">
+
+    <input type="text" id="name" placeholder="Student Name">
+
+    <input type="text" id="email" placeholder="Email">
+
+    <input type="number" id="age" placeholder="Age">
+
+    <input type="text" id="course" placeholder="Course">
+
+    <input type="text" id="mobile" placeholder="Mobile NO">
+
+    <input type="date" id="dob">
+
+    <input type="date" id="admissionDate">
+
+    <input type="text" id="address" placeholder="Address">
+
+    <select id="gender">
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+    </select>
+    
+    <button class="add-btn" onclick="addStudent()">Add Student</button>
+    <button class="clear-btn" onclick="ClearAllStudents()">Clear All Students</button>
+    <button class="print-btn" onclick="printStudents()">print Students</button>
+
+    
+</div>
+
+<table>
+
+    <thead>
+        <tr>
+            <th>S.NO.</th>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Course</th>
+            <th>Mobile</th>
+            <th>Address</th>
+            <th>Gender</th>
+            <th>Date of Birth</th>
+            <th>AdmissionDate</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody id="studentList">
+
+    </tbody>
+
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
